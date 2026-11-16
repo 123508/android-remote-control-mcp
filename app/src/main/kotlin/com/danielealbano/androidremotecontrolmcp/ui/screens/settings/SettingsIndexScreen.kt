@@ -17,6 +17,7 @@ import androidx.compose.material.icons.filled.CellTower
 import androidx.compose.material.icons.filled.Cloud
 import androidx.compose.material.icons.filled.Folder
 import androidx.compose.material.icons.filled.Key
+import androidx.compose.material.icons.filled.Language
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Shield
 import androidx.compose.material.icons.filled.Terminal
@@ -69,6 +70,12 @@ private val SETTINGS_INDEX_ENTRIES =
             titleRes = R.string.settings_general_title,
             subtitleRes = R.string.settings_general_subtitle,
             route = SettingsRoute.General.route,
+        ),
+        SettingsIndexEntry(
+            icon = Icons.Default.Language,
+            titleRes = R.string.settings_language_title,
+            subtitleRes = R.string.settings_language_subtitle,
+            route = SettingsRoute.Language.route,
         ),
         SettingsIndexEntry(
             icon = Icons.Default.Key,

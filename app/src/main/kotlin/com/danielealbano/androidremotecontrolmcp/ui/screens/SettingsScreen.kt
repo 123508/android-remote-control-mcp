@@ -13,6 +13,7 @@ import com.danielealbano.androidremotecontrolmcp.ui.navigation.SettingsRoute
 import com.danielealbano.androidremotecontrolmcp.ui.screens.settings.AccessSettingsScreen
 import com.danielealbano.androidremotecontrolmcp.ui.screens.settings.ChannelSettingsScreen
 import com.danielealbano.androidremotecontrolmcp.ui.screens.settings.GeneralSettingsScreen
+import com.danielealbano.androidremotecontrolmcp.ui.screens.settings.LanguageSettingsScreen
 import com.danielealbano.androidremotecontrolmcp.ui.screens.settings.McpToolsSettingsScreen
 import com.danielealbano.androidremotecontrolmcp.ui.screens.settings.NotificationFilterScreen
 import com.danielealbano.androidremotecontrolmcp.ui.screens.settings.OAuthClientsScreen
@@ -63,6 +64,9 @@ fun SettingsScreen(
         }
         composable(SettingsRoute.General.route) {
             GeneralSettingsScreen(onBack = { navController.popBackStack() }, viewModel = viewModel)
+        }
+        composable(SettingsRoute.Language.route) {
+            LanguageSettingsScreen(onBack = { navController.popBackStack() })
         }
         composable(SettingsRoute.Access.route) {
             AccessSettingsScreen(
