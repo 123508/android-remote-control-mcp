@@ -74,12 +74,16 @@ class ShizukuShellBackend internal constructor(
     private val api: ShizukuApi,
     private val openOutput: (ParcelFileDescriptor) -> InputStream,
     private val bindTimeout: Duration,
+    private val serviceTag: String = SERVICE_TAG,
 ) : ShellBackend {
     @Inject
     constructor(
         @ApplicationContext context: Context,
         api: ShizukuApi,
     ) : this(context.packageName, api, { ParcelFileDescriptor.AutoCloseInputStream(it) }, BIND_TIMEOUT)
+
+    constructor(context: Context, api: ShizukuApi, serviceTag: String) :
+        this(context.packageName, api, { ParcelFileDescriptor.AutoCloseInputStream(it) }, BIND_TIMEOUT, serviceTag)
 
     override val kind = ShellBackendKind.SHIZUKU
 
@@ -148,7 +152,7 @@ class ShizukuShellBackend internal constructor(
             .UserServiceArgs(ComponentName(packageName, ShellUserService::class.java.name))
             .daemon(false)
             .processNameSuffix(PROCESS_SUFFIX)
-            .tag("$SERVICE_TAG-$generation")
+            .tag("$serviceTag-$generation")
             .version(BuildConfig.VERSION_CODE)
             .debuggable(false)
     }

@@ -191,6 +191,20 @@
 
     <string name="permissions_title">权限</string>
     <string name="permission_accessibility">无障碍服务</string>
+    <string name="accessibility_shizuku_prepare">配置 Shizuku 并重启应用</string>
+    <string name="accessibility_shizuku_prepare_description">为无障碍功能启用 Shizuku 连接。应用需要重启，运行中的命令将停止。</string>
+    <string name="accessibility_shizuku_grant_description">请在 Shizuku 中授予此应用访问权限。</string>
+    <string name="accessibility_shizuku_grant">授予 Shizuku 访问权限</string>
+    <string name="accessibility_shizuku_ready">Shizuku 已就绪。</string>
+    <string name="accessibility_shizuku_enable">通过 Shizuku 启用</string>
+    <string name="accessibility_shizuku_disable">通过 Shizuku 停用</string>
+    <string name="accessibility_shizuku_confirm">启用无障碍服务？</string>
+    <string name="accessibility_shizuku_explanation">这将允许应用读取屏幕内容并控制设备。Shizuku 将修改当前 Android 用户的无障碍设置。</string>
+    <string name="accessibility_shizuku_disable_confirm">停用无障碍服务？</string>
+    <string name="accessibility_shizuku_disable_explanation">远程屏幕读取和控制将停止，直到重新启用服务。</string>
+    <string name="accessibility_shizuku_continue">继续</string>
+    <string name="accessibility_shizuku_success">无障碍设置已更新。</string>
+    <string name="accessibility_shizuku_failure">无法确认设置已生效。请检查 Shizuku，必要时使用 Android 无障碍设置。</string>
     <string name="permission_notifications">通知</string>
     <string name="permission_enable">启用</string>
     <string name="permission_enabled">已启用</string>

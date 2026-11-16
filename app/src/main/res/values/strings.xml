@@ -221,6 +221,20 @@
     <!-- Permissions -->
     <string name="permissions_title">Permissions</string>
     <string name="permission_accessibility">Accessibility Service</string>
+    <string name="accessibility_shizuku_prepare">Set up Shizuku and restart app</string>
+    <string name="accessibility_shizuku_prepare_description">Enable the Shizuku connection for accessibility. The app must restart; running commands will stop.</string>
+    <string name="accessibility_shizuku_grant_description">Grant this app access in Shizuku.</string>
+    <string name="accessibility_shizuku_grant">Grant Shizuku access</string>
+    <string name="accessibility_shizuku_ready">Shizuku is ready.</string>
+    <string name="accessibility_shizuku_enable">Enable with Shizuku</string>
+    <string name="accessibility_shizuku_disable">Disable with Shizuku</string>
+    <string name="accessibility_shizuku_confirm">Enable accessibility service?</string>
+    <string name="accessibility_shizuku_explanation">This allows the app to read screen content and control your device. Shizuku will update the accessibility settings for this Android user.</string>
+    <string name="accessibility_shizuku_disable_confirm">Disable accessibility service?</string>
+    <string name="accessibility_shizuku_disable_explanation">Remote screen reading and control will stop until the service is enabled again.</string>
+    <string name="accessibility_shizuku_continue">Continue</string>
+    <string name="accessibility_shizuku_success">Accessibility setting updated.</string>
+    <string name="accessibility_shizuku_failure">Could not confirm the change. Check Shizuku and use Android accessibility settings if needed.</string>
     <string name="permission_notifications">Notifications</string>
     <string name="permission_enable">Enable</string>
     <string name="permission_enabled">Enabled</string>
